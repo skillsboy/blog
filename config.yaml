@@ -1,0 +1,41 @@
+# https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-variables/
+
+baseURL: https://skillsboy.github.io/blog/
+languageCode: en-us
+title: Blog | SkillsBoY
+theme: hugo-PaperMod
+#RelativeURLs: true
+CanonifyURLs: true
+
+
+params:
+    env: production
+    defaultTheme: dark
+    disableThemeToggle: true
+    homeInfoParams:
+        Title: Hi there 👋
+        Content: Welcome to my blog
+    socialIcons: # optional
+        - name: "Linkedin"
+          url: "https://www.linkedin.com/in/miles-montgomery-93528b168"
+        - name: "Stackoverflow"
+          url: "https://stackoverflow.com/users/12441919/skillsboy"
+        - name: "Github"
+          url: "https://github.com/skillsboy"
+        - name: "Personal Website"
+          url: "https://skillsboy.github.io"
+    showBreadCrumbs: true
+    showCodeCopyButtons: true
+    showShareButtons: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+    main:
+    - name: Search
+      url: search/
+      weight: 20 
