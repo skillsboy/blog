@@ -40,7 +40,7 @@
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    margin: 24px 0 16px;
+    margin: 35px 0 16px;
 }
 
 .post-content h1 {
@@ -61,6 +61,9 @@
 
 .post-content h3 {
     font-size: 24px;
+
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #21262d;
 }
 
 .post-content h4 {
