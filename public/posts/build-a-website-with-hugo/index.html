@@ -140,7 +140,7 @@ Great for a Personal Portfolio or a Blog.</p>
 <li><a href="https://gohugo.io/getting-started/installing/" target="_blank">Hugo</a></li>
 </ul>
 <h3 id="create-a-new-hugo-site">Create a new hugo site<a hidden class="anchor" aria-hidden="true" href="#create-a-new-hugo-site">#</a></h3>
-<p><strong>1.</strong> New site</p>
+<p><strong>1. New site</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site websiteName -f <span style="color:#e6db74">&#34;yaml&#34;</span>
 </code></pre></div><ul>
 <li><code>websiteName</code> is the name of the site that is going to be created.</li>
@@ -157,24 +157,24 @@ Great for a Personal Portfolio or a Blog.</p>
 └── themes</p>
 </blockquote>
 <h3 id="add-a-theme">Add a theme<a hidden class="anchor" aria-hidden="true" href="#add-a-theme">#</a></h3>
-<p><strong>1.</strong> Change directory</p>
+<p><strong>1. Change directory</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd websiteName
 cd themes
-</code></pre></div><p><strong>2.</strong> Download theme</p>
+</code></pre></div><p><strong>2. Download theme</strong></p>
 <p style="font-size: 12px; margin-bottom: 0; margin-top: 30px">~websiteName/themes/ %</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/adityatelange/hugo-PaperMod.git
 </code></pre></div><p>A <code>hugo-PaperMod</code> folder will be created inside the themes, themes can be found <a href="https://themes.gohugo.io/" rel="noreferrer" target="_blank">here</a>.</p>
-<p><strong>3.</strong> Now we have to activate it. To do that go back to the projects root.</p>
+<p><strong>3. Now we have to activate it. To do that go back to the projects root.</strong></p>
 <p style="font-size: 12px; margin-bottom: 0; margin-top: 30px">~websiteName/themes/ %</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ..
-</code></pre></div><p><strong>4.</strong> Activate</p>
+</code></pre></div><p><strong>4. Activate</strong></p>
 <p>Open <code>config.yaml</code>.<br>
 Add:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">theme: hugo-PaperMod
 </code></pre></div><p><img loading="lazy" src="https://skillsboy.github.io/blog/images/build-a-website-with-hugo-add-theme.png#center" alt="Hugo add theme"  />
 </p>
 <h3 id="test-local-site">Test local site<a hidden class="anchor" aria-hidden="true" href="#test-local-site">#</a></h3>
-<p><strong>1.</strong> Test</p>
+<p><strong>1. Test</strong></p>
 <p style="font-size: 12px; margin-bottom: 0; margin-top: 30px">~websiteName/ %</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D
 </code></pre></div><ul>
@@ -183,20 +183,20 @@ Add:</p>
 <p>This will create a live server.</p>
 <p><img loading="lazy" src="https://skillsboy.github.io/blog/images/build-a-website-with-hugo-test-site.png#center" alt="Hugo test site"  />
 </p>
-<p><strong>2.</strong> Navigate with your browser to the given url.</p>
+<p><strong>2. Navigate with your browser to the given url.</strong></p>
 <p><img loading="lazy" src="https://skillsboy.github.io/blog/images/build-a-website-with-hugo-final-result.png#center" alt="Hugo website final result"  />
 </p>
 <h3 id="build-static-files-for-production">Build static files for production<a hidden class="anchor" aria-hidden="true" href="#build-static-files-for-production">#</a></h3>
-<p><strong>1.</strong> Add baseURL</p>
+<p><strong>1. Add baseURL</strong></p>
 <p>Open <code>config.yaml</code>.<br>
 Change:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL: https://yourDomain.com
 </code></pre></div><p>Add your domain, this has to be done because when hugo generates the static files it may use absolute paths.</p>
-<p><strong>2.</strong> Build static files</p>
+<p><strong>2. Build static files</strong></p>
 <p style="font-size: 12px; margin-bottom: 0; margin-top: 30px">~websiteName/ %</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
 </code></pre></div><p>This will create a folder called <code>public</code> in the projects root, where all the static files will to be generated.</p>
-<p><strong>3.</strong> Copy /public/*</p>
+<p><strong>3. Copy /public/</strong>*</p>
 <p>Now just copy those files, from inside the public folder, to your webserver and you will be able to see the default page from the chosen theme.</p>
 <br>
 <p align="center" style="font-size: 30px;">Have fun 😄</p>
