@@ -15,7 +15,7 @@ Great for a Personal Portfolio or a Blog.
 
 ### Create a new hugo site
 
-**1.** New site
+**1. New site**
 
 ```bash
 hugo new site websiteName -f "yaml"
@@ -35,14 +35,14 @@ This will create a folder called ``websiteName`` with the following structure.
 
 ### Add a theme
 
-**1.** Change directory
+**1. Change directory**
 
 ```bash
 cd websiteName
 cd themes
 ```
 
-**2.** Download theme
+**2. Download theme**
 
 {{<pwd>}}~websiteName/themes/ %{{</pwd>}}
 
@@ -52,7 +52,7 @@ git clone https://github.com/adityatelange/hugo-PaperMod.git
 
 A ``hugo-PaperMod`` folder will be created inside the themes, themes can be found <a href="https://themes.gohugo.io/" rel="noreferrer" target="_blank">here</a>.
 
-**3.** Now we have to activate it. To do that go back to the projects root.
+**3. Now we have to activate it. To do that go back to the projects root.**
 
 {{<pwd>}}~websiteName/themes/ %{{</pwd>}}
 
@@ -60,7 +60,7 @@ A ``hugo-PaperMod`` folder will be created inside the themes, themes can be foun
 cd ..
 ```
 
-**4.** Activate
+**4. Activate**
 
 Open ``config.yaml``.  
 Add:
@@ -73,7 +73,7 @@ theme: hugo-PaperMod
 
 ### Test local site
 
-**1.** Test
+**1. Test**
 
 {{<pwd>}}~websiteName/ %{{</pwd>}}
 
@@ -87,13 +87,13 @@ This will create a live server.
 
 ![Hugo test site](/images/build-a-website-with-hugo-test-site.png#center)
 
-**2.** Navigate with your browser to the given url.
+**2. Navigate with your browser to the given url.**
 
 ![Hugo website final result](/images/build-a-website-with-hugo-final-result.png#center)
 
 ### Build static files for production
 
-**1.** Add baseURL
+**1. Add baseURL**
 
 Open ``config.yaml``.  
 Change:
@@ -104,7 +104,7 @@ baseURL: https://yourDomain.com
 
 Add your domain, this has to be done because when hugo generates the static files it may use absolute paths.
 
-**2.** Build static files
+**2. Build static files**
 
 {{<pwd>}}~websiteName/ %{{</pwd>}}
 
@@ -114,7 +114,7 @@ hugo
 
 This will create a folder called ``public`` in the projects root, where all the static files will to be generated. 
 
-**3.** Copy /public/*
+**3. Copy /public/***
 
 Now just copy those files, from inside the public folder, to your webserver and you will be able to see the default page from the chosen theme.  
 
