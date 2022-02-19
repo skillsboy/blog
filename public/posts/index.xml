@@ -6,7 +6,22 @@
     <description>Recent content in Posts on Blog | SkillsBoY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Feb 2022 15:40:15 +0000</lastBuildDate><atom:link href="https://skillsboy.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 13:18:07 +0000</lastBuildDate><atom:link href="https://skillsboy.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Push Folders Content to Another Git Branch</title>
+      <link>https://skillsboy.github.io/blog/posts/push-folders-content-to-another-git-branch/</link>
+      <pubDate>Sat, 19 Feb 2022 13:18:07 +0000</pubDate>
+      
+      <guid>https://skillsboy.github.io/blog/posts/push-folders-content-to-another-git-branch/</guid>
+      <description>Here I&amp;rsquo;m going to show you how to push all the content of a folder from the main branch to another branch called gh-pages.
+Usefull for deploying specific files and not the whole project on github pages.
+Commands These commands are all run from the main branch.
+1. Add
+git add . 2. Commit
+git commit -m &amp;#34;commit message&amp;#34; 3. Subtree
+git subtree push -P public main gh-pages  -P (prefix) flag is the folders content that will be pushed, in this case the public.</description>
+    </item>
+    
     <item>
       <title>Build a Website With Hugo</title>
       <link>https://skillsboy.github.io/blog/posts/build-a-website-with-hugo/</link>
