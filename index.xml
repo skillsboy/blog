@@ -19,7 +19,7 @@ Commands These commands are all run from the main branch.
 1. Add
 git add . 2. Commit
 git commit -m &amp;#34;commit message&amp;#34; 3. Subtree
-git subtree push -P public main gh-pages  -P (prefix) flag is the folders content that will be pushed, in this case the public.</description>
+git subtree push -P public origin gh-pages  -P (prefix) flag is the folders content that will be pushed, in this case the public.</description>
     </item>
     
     <item>
