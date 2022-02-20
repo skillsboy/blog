@@ -112,7 +112,7 @@ Add your domain, this has to be done because when hugo generates the static file
 hugo
 ```
 
-This will create a folder called ``public`` in the projects root, where all the static files will to be generated. 
+This will create a folder called ``public`` in the projects root, where all the static files will be generated. 
 
 **3. Copy /public/***
 
