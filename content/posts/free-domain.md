@@ -1,7 +1,7 @@
 ---
 title: "Free Domain"
 date: 2022-02-20T12:40:43Z
-draft: true
+draft: false
 ---
 
 Need a free domain? Here you will find out how to get one for 12 months with unlimited renewals completly free.  
