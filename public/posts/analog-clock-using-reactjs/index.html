@@ -92,8 +92,8 @@ import &#39;./App.css&#39;; function App() { return ( &lt;div className=&quot;Ap
   "keywords": [
     
   ],
-  "articleBody": "Simple analog clock using React JS (React Hooks)\nDemo\nSource Code\nCreate react app This will create a folder called my-app and will start a developing server for this project.\nnpx create-react-app my-app cd my-app npm start Clean App.js Open App.js and remove unnecessary code.\nApp.js\nimport './App.css'; function App() { return (   ); } export default App; Add React Hooks App.js\n import { useEffect, useRef, useState } from 'react'; import './App.css'; function App() { const hourHand = useRef(); const minHand = useRef(); const secHand = useRef(); const [timestamp, setTimestamp] = useState(\"\"); return (   ); } export default App;  Add Clock Function This function will calculate the angle of each clock hand and assign them.\nApp.js\n import { useEffect, useRef, useState } from 'react'; import './App.css'; function App() { const hourHand = useRef(); const minHand = useRef(); const secHand = useRef(); const [timestamp, setTimestamp] = useState(\"\"); function runClock() { const d = new Date(); //object of date() const hr = d.getHours(); const min = d.getMinutes(); const sec = d.getSeconds(); const hr_rotation = 30 * hr + min / 2; //converting current time const min_rotation = 6 * min; const sec_rotation = 6 * sec; setTimestamp(d); hourHand.current.style.transform = `rotate(${hr_rotation}deg)`; minHand.current.style.transform = `rotate(${min_rotation}deg)`; secHand.current.style.transform = `rotate(${sec_rotation}deg)`; } return (   ); } export default App;  Run at first render Use useEffect to run the Clock Function in the first render and every next few miliseconds, so it updates the clock hands.\nApp.js\n import { useEffect, useRef, useState } from 'react'; import './App.css'; function App() { const hourHand = useRef(); const minHand = useRef(); const secHand = useRef(); const [timestamp, setTimestamp] = useState(\"\"); function runClock() { const d = new Date(); //object of date() const hr = d.getHours(); const min = d.getMinutes(); const sec = d.getSeconds(); const hr_rotation = 30 * hr + min / 2; //converting current time const min_rotation = 6 * min; const sec_rotation = 6 * sec; setTimestamp(d); hourHand.current.style.transform = `rotate(${hr_rotation}deg)`; minHand.current.style.transform = `rotate(${min_rotation}deg)`; secHand.current.style.transform = `rotate(${sec_rotation}deg)`; } useEffect(() = { runClock(); setInterval(runClock, 300); }, []); return (   ); } export default App;  Add JSX (structure) App.js\n import { useEffect, useRef, useState } from 'react'; import './App.css'; function App() { const hourHand = useRef(); const minHand = useRef(); const secHand = useRef(); const [timestamp, setTimestamp] = useState(\"\"); function runClock() { const d = new Date(); //object of date() const hr = d.getHours(); const min = d.getMinutes(); const sec = d.getSeconds(); const hr_rotation = 30 * hr + min / 2; //converting current time const min_rotation = 6 * min; const sec_rotation = 6 * sec; setTimestamp(d); hourHand.current.style.transform = `rotate(${hr_rotation}deg)`; minHand.current.style.transform = `rotate(${min_rotation}deg)`; secHand.current.style.transform = `rotate(${sec_rotation}deg)`; } useEffect(() = { runClock(); setInterval(runClock, 300); }, []); return (     {timestamp.toString()}\n  ); } export default App;  Add CSS Append to the end of App.css:\n.clock { width: 350px; height: 350px; display: flex; justify-content: center; align-items: center; background: url(\"/public/clock.png\"); background-size: cover; border: 4px solid #091921; border-radius: 50%; box-shadow: 0px 0px 50px red; position: relative; } .clock::before { content: ''; width: 15px; height: 15px; background: #777; border-radius: 50%; z-index: 100; } .hour { position: absolute; bottom: 175px; height: 95px; width: 10px; background-color: #777777; transform-origin: bottom center; transform: rotate(0deg); } .min { position: absolute; bottom: 175px; height: 120px; width: 7px; background-color: #777777; transform-origin: bottom center; transform: rotate(0deg); } .sec { position: absolute; bottom: 150px; height: 167px; width: 3px; background-color: red; transform-origin: center 142px; transform: rotate(0deg); } Add Clock background image Save this image inside the public folder as clock.png. Download\nEnd result Demo\nSource Code\nHave fun 😄\n",
-  "wordCount" : "623",
+  "articleBody": "Simple analog clock using React JS (React Hooks)\nDemo\nSource Code\nCreate react app This will create a folder called my-app and will start a developing server for this project.\nnpx create-react-app my-app cd my-app npm start Clean App.js Open App.js and remove unnecessary code.\nApp.js\nimport './App.css'; function App() { return (   ); } export default App; Add React Hooks App.js\n import { useEffect, useRef, useState } from 'react'; import './App.css'; function App() { const hourHand = useRef(); const minHand = useRef(); const secHand = useRef(); const [timestamp, setTimestamp] = useState(\"\"); return (   ); } export default App;  Add Clock Function This function will calculate the angle of each clock hand and assign them.\nApp.js\n import { useEffect, useRef, useState } from 'react'; import './App.css'; function App() { const hourHand = useRef(); const minHand = useRef(); const secHand = useRef(); const [timestamp, setTimestamp] = useState(\"\"); function runClock() { const d = new Date(); //object of date() const hr = d.getHours(); const min = d.getMinutes(); const sec = d.getSeconds(); const hr_rotation = 30 * hr + min / 2; //converting current time const min_rotation = 6 * min; const sec_rotation = 6 * sec; setTimestamp(d); hourHand.current.style.transform = `rotate(${hr_rotation}deg)`; minHand.current.style.transform = `rotate(${min_rotation}deg)`; secHand.current.style.transform = `rotate(${sec_rotation}deg)`; } return (   ); } export default App;  Run at first render Use useEffect to run the Clock Function in the first render and every next few miliseconds, so it updates the clock hands.\nApp.js\n import { useEffect, useRef, useState } from 'react'; import './App.css'; function App() { const hourHand = useRef(); const minHand = useRef(); const secHand = useRef(); const [timestamp, setTimestamp] = useState(\"\"); function runClock() { const d = new Date(); //object of date() const hr = d.getHours(); const min = d.getMinutes(); const sec = d.getSeconds(); const hr_rotation = 30 * hr + min / 2; //converting current time const min_rotation = 6 * min; const sec_rotation = 6 * sec; setTimestamp(d); hourHand.current.style.transform = `rotate(${hr_rotation}deg)`; minHand.current.style.transform = `rotate(${min_rotation}deg)`; secHand.current.style.transform = `rotate(${sec_rotation}deg)`; } useEffect(() = { runClock(); setInterval(runClock, 300); }, []); return (   ); } export default App;  Add JSX (structure) App.js\n import { useEffect, useRef, useState } from 'react'; import './App.css'; function App() { const hourHand = useRef(); const minHand = useRef(); const secHand = useRef(); const [timestamp, setTimestamp] = useState(\"\"); function runClock() { const d = new Date(); //object of date() const hr = d.getHours(); const min = d.getMinutes(); const sec = d.getSeconds(); const hr_rotation = 30 * hr + min / 2; //converting current time const min_rotation = 6 * min; const sec_rotation = 6 * sec; setTimestamp(d); hourHand.current.style.transform = `rotate(${hr_rotation}deg)`; minHand.current.style.transform = `rotate(${min_rotation}deg)`; secHand.current.style.transform = `rotate(${sec_rotation}deg)`; } useEffect(() = { runClock(); setInterval(runClock, 300); }, []); return (     {timestamp.toString()}\n  ); } export default App;  Add CSS Replace App.css with:\nbody { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; } .App { text-align: center; } .App-logo { height: 40vmin; pointer-events: none; } .App-header { background-color: #162c57; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: calc(10px + 2vmin); color: white; } .App-link { color: #61dafb; } .clock { width: 350px; height: 350px; display: flex; justify-content: center; align-items: center; background: url(\"/public/clock.png\"); background-size: cover; border: 4px solid #091921; border-radius: 50%; box-shadow: 0px 0px 50px red; position: relative; } .clock::before { content: ''; width: 15px; height: 15px; background: #777; border-radius: 50%; z-index: 100; } .hour { position: absolute; bottom: 175px; height: 95px; width: 10px; background-color: #777777; transform-origin: bottom center; transform: rotate(0deg); } .min { position: absolute; bottom: 175px; height: 120px; width: 7px; background-color: #777777; transform-origin: bottom center; transform: rotate(0deg); } .sec { position: absolute; bottom: 150px; height: 167px; width: 3px; background-color: red; transform-origin: center 142px; transform: rotate(0deg); } Add Clock background image Save this image inside the public folder as clock.png. Download\nEnd result Demo\nSource Code\nHave fun 😄\n",
+  "wordCount" : "694",
   "inLanguage": "en",
   "datePublished": "2022-03-03T12:20:07Z",
   "dateModified": "2022-03-03T12:20:07Z",
@@ -331,8 +331,46 @@ function App() {
 export default App;
 </code></pre></div>
 <h3 id="add-css">Add CSS<a hidden class="anchor" aria-hidden="true" href="#add-css">#</a></h3>
-<p>Append to the end of <code>App.css</code>:</p>
-<pre tabindex="0"><code>.clock {
+<p>Replace <code>App.css</code> with:</p>
+<pre tabindex="0"><code>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #162c57;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.clock {
   width: 350px;
   height: 350px;
   display: flex;
