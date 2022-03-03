@@ -6,7 +6,23 @@
     <description>Recent content on Blog | SkillsBoY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Feb 2022 12:40:43 +0000</lastBuildDate><atom:link href="https://skillsboy.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 12:20:07 +0000</lastBuildDate><atom:link href="https://skillsboy.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analog Clock Using ReactJS</title>
+      <link>https://skillsboy.github.io/blog/posts/analog-clock-using-reactjs/</link>
+      <pubDate>Thu, 03 Mar 2022 12:20:07 +0000</pubDate>
+      
+      <guid>https://skillsboy.github.io/blog/posts/analog-clock-using-reactjs/</guid>
+      <description>Simple analog clock using React JS (React Hooks)
+Demo
+Source Code
+Create react app This will create a folder called my-app and will start a developing server for this project.
+npx create-react-app my-app cd my-app npm start Clean App.js Open App.js and remove unnecessary code.
+App.js
+import &#39;./App.css&#39;; function App() { return ( &amp;lt;div className=&amp;quot;App&amp;quot;&amp;gt; &amp;lt;header className=&amp;quot;App-header&amp;quot;&amp;gt; &amp;lt;/header&amp;gt; &amp;lt;/div&amp;gt; ); } export default App; Add React Hooks App.js
+ import { useEffect, useRef, useState } from &#39;react&#39;; import &#39;.</description>
+    </item>
+    
     <item>
       <title>Free Domain</title>
       <link>https://skillsboy.github.io/blog/posts/free-domain/</link>
