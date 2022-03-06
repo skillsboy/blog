@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Blog | SkillsBoY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Mar 2022 12:20:07 +0000</lastBuildDate><atom:link href="https://skillsboy.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Mar 2022 12:19:47 +0000</lastBuildDate><atom:link href="https://skillsboy.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Run Javascript Through Bookmark (Bookmarklet)</title>
+      <link>https://skillsboy.github.io/blog/posts/run-javascript-through-bookmark-bookmarklet/</link>
+      <pubDate>Sun, 06 Mar 2022 12:19:47 +0000</pubDate>
+      
+      <guid>https://skillsboy.github.io/blog/posts/run-javascript-through-bookmark-bookmarklet/</guid>
+      <description>Bookmarklet is a browser bookmark that runs javascript on the current page. This is, whenever you press the bookmark it will execute javascript.
+If you have to execute javascript everyday on a especific page this will be useful.
+Add page to bookmark bar Add bookmark or drag the url to the bookmark bar.
+Edit bookmark  Right click bookmark (1). Edit (2).  Create/edit bookmarklet  Name: You can change the bookmark Name this appears on the bookmark bar.</description>
+    </item>
+    
     <item>
       <title>Analog Clock Using ReactJS</title>
       <link>https://skillsboy.github.io/blog/posts/analog-clock-using-reactjs/</link>
