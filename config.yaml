@@ -27,6 +27,7 @@ params:
     showBreadCrumbs: true
     showCodeCopyButtons: true
     showShareButtons: true
+    showToc: true
 
 outputs:
     home:
