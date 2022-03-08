@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Blog | SkillsBoY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Mar 2022 12:19:47 +0000</lastBuildDate><atom:link href="https://skillsboy.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 17:12:16 +0000</lastBuildDate><atom:link href="https://skillsboy.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Storing Data in the Browser With LocalStorage</title>
+      <link>https://skillsboy.github.io/blog/posts/storing-data-in-the-browser-with-localstorage/</link>
+      <pubDate>Tue, 08 Mar 2022 17:12:16 +0000</pubDate>
+      
+      <guid>https://skillsboy.github.io/blog/posts/storing-data-in-the-browser-with-localstorage/</guid>
+      <description>LocalStorage is a way to save data in the browser through javascript for each domain/website.
+ key-value pairs. The key values are always of type string, so if you want to save an object or an array one way is to use JSON.stringify(). No expiration date, unless the client cleans the browser data. Max size: 5MB per domain/website. If you use incognito mode the data will not persist, this is, data will be cleared when the browser is closed.</description>
+    </item>
+    
     <item>
       <title>Run Javascript Through Bookmark (Bookmarklet)</title>
       <link>https://skillsboy.github.io/blog/posts/run-javascript-through-bookmark-bookmarklet/</link>
